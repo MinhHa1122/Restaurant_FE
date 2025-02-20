@@ -1,0 +1,27 @@
+
+    .product_card-item_left_status {
+        margin-top: 10px;
+    }
+    .product_card-item_left {
+        display: flex;
+        align-items: center;
+        flex-grow: 20;
+    }
+    .Product_card-item_name_order {
+        padding-left: 12px;
+        padding-top: 4px;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        span {
+            overflow: hidden;       
+            text-overflow: ellipsis; 
+            width: 70%;
+        }
+    }
+    .title_table_bill {
+        text-align: center;
+    }
+    .Product_card-item_quality-price {
+        text-align: center;
+    }
