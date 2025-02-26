@@ -4,7 +4,7 @@ import mapboxgl from 'mapbox-gl';
 mapboxgl.accessToken = 'pk.eyJ1IjoibXlob2FuZzEyMyIsImEiOiJjbTFlZzF2d2cydWR0MmtvajFwYnB5OW42In0.-CeNZom6cnNBEsAWVumPuQ'
 const MapComponent = ( {Destination} ) => {
     const mapContainer = useRef(null)
-    const start = [105.780017, 10.045260]
+    const start = [106.67103376582348, 10.971422011254498]     // 3 điểm cần đổi gg map
     let mapRef = useRef()
     let markerRef = useRef()
     let timeout = useRef()
@@ -109,7 +109,7 @@ async function getRoute(end) {
             const mapInstance = new mapboxgl.Map({
                 container: mapContainer.current,
                 style: 'mapbox://styles/mapbox/streets-v11',
-                center: [105.7800, 10.0440], // Kinh độ, Vĩ độ
+                center: [106.67103376582348, 10.971422011254498], // Kinh độ, Vĩ độ     cái này nka
                 zoom: 14,
             });
             mapRef.current = mapInstance
@@ -172,7 +172,7 @@ async function getRoute(end) {
        markerElement.appendChild( imgRef.current) // Thêm hình ảnh vào marker
         //   // Tạo marker với phần tử DOM
         markerRef.current =  new mapboxgl.Marker(markerElement)
-          .setLngLat([105.780017, 10.045260])
+          .setLngLat([106.67103376582348, 10.971422011254498])   // cai nay nka
           .addTo(mapInstance)
   });
     }

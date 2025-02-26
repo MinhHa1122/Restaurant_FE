@@ -145,7 +145,7 @@ function YourCard({ cx, socket }) {
         YourCard.forEach(element => {
             Total += (element.Price * element.Amount)
         });
-        return Total - Voucher
+        return Total - Voucher  + 15000   // Tien ship
     }, [YourCard, Voucher])
     return (
         <div className={cx('master-container')}>

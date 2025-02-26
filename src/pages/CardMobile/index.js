@@ -180,10 +180,10 @@ function App() {
                         <h2 className="Card_ship-address-header">GoGi House</h2>
                         <div className='Card_ship-address_content'>
                             <span className="Card_ship-address-detail">
-                                TTTM Vincom
+                                GoGi House Gò Đậu
                             </span>
                             <span className="Card_ship-address-country">
-                                2 Đường Hùng Vương, Thới Bình, Ninh Kiều, Cần Thơ 90000, Việt Nam
+                                167 Đ. 30 Tháng 4, Phú Thọ, Thủ Dầu Một, Bình Dương
                             </span>
                         </div>
                         <div className="Card_ship-address_button">
